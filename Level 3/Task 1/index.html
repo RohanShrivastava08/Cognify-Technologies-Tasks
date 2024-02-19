@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <h1>BIKE GALLERY <i class="fa-solid fa-camera-retro"></i></h1>
+    </nav>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <section class="slideshow-section">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="img3.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="img4.jpg" alt="Image 3">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+    
+    <section class="gallery-section">
+        <h1 class="gallery-title">LIST OF BIKES</h1>
+        <div class="gallery">
+            <div class="thumbnail">
+                <img src="img1.jpg" alt="Image 1">
+            </div>
+            <div class="thumbnail">
+                <img src="img3.jpg" alt="Image 2">
+            </div>
+            <div class="thumbnail">
+                <img src="img4.jpg" alt="Image 3">
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Bike Gallery. All Rights Reserved.</p>
+        </footer>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

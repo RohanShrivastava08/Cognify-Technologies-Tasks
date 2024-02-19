@@ -1,0 +1,237 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground 8s infinite alternate; /* Animation to change background image */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(233, 116, 116);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Menu Icon Styles */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+/* Main Section Styles */
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Section Styles */
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Button Styles */
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btnone {
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo {
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Animation to change background image */
+@keyframes changeBackground {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img1.jpg");
+    }
+    25% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img2.jpg");
+    }
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img3.jpg");
+    }
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img4.jpg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("img5.jpg");
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header {
+        height: 50vh;
+    }
+
+    nav .menu a {
+        font-size: 14px;
+    }
+
+    section h1 {
+        font-size: 40px;
+    }
+
+    section p {
+        font-size: 20px;
+    }
+
+    section a {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for even smaller screens */
+    header {
+        height: 30vh;
+    }
+
+    nav .menu a {
+        font-size: 12px;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section a {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+  }
+  
+@keyframes changetext {
+    0% {
+      content: "Darjeeling";
+    }
+    20% {
+      content: "Agra";
+    }
+    35% {
+      content: "Jaipur";
+    }
+    60% {
+      content: "kerala";
+    }
+    80% {
+      content: "delhi";
+    }
+    100% {
+      content: "Mumbai";
+    }
+}

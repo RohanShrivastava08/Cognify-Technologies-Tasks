@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121417;
+}
+
+nav {
+    background-color: #1c231a;
+    color: #ff8e8e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 1.rem;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    list-style-type: circle;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff7f50;
+}
+
+/* Slideshow Styles */
+.slideshow-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(222, 235, 216, 0.5);
+    color: #351a1a;
+    border: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Gallery Styles */
+.gallery-section {
+    padding: 20px;
+    background-color: #3a3231;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 191, 124, 0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    max-height: 80%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #cab167;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #95cd7c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

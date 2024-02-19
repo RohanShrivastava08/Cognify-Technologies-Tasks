@@ -1,0 +1,139 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d24444;
+    color: #333;
+}
+
+header {
+    background-color: #e99595;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 50px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section {
+    padding: 40px 0;
+    background-color: rgb(235, 207, 231);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Add border to create space between cards */
+}
+
+.card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #ccc; /* Change border color on hover */
+}
+
+.card-content {
+    padding: 1.5rem;
+    color: #a72f2f;
+}
+
+.card-content p {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .column.is-one-third {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive Grid Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.column {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+/* Decorative Elements */
+.container {
+    background-color: #c62424;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #161111; /* Add border to container */
+}
+
+.header-decoration {
+    border-bottom: 2px solid #271e1e; /* Add bottom border to header */
+    margin-bottom: 20px; /* Add margin to create space between header and cards */
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(45, 38, 38, 0.1);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Add border to create space between cards */
+}
+
+.card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #c0e7bc; /* Change border color on hover */
+}
+
+/* Additional Decorative Elements */
+.header-decoration {
+    background-color: #6143b9;
+    padding: 10px 0;
+}
+
+.container {
+    background-color: #96caae;
+    padding: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add slight upward movement on hover */
+}
+
+header {
+    background-color: #e9ff7c; /* Dark gray background for the header */
+}
+
+.container {
+    background-color: #ff5a5a; /* White background for the container */
+}
+
+.card {
+    background-color: #a2f5a6; /* Light gray background for cards */
+}
